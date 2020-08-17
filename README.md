@@ -1,5 +1,9 @@
 # Object Relations Practice
 
+Anthony - 
+
+r.owner ----< Restaurant ----< menuitem >--- recipe
+
 We have four models: `Recipe`, `Restaurant`, `RestuarantOwner` and `MenuItem`. 
 
 A `RestaurantOwner` has many `Restaurant`s and a `Restaurant` belongs to a `RestaurantOwner`. A `Restaurant` has many `MenuItem`s and a `Recipe` has many `MenuItem`s. A `MenuItem` belongs to a `Restaurant` and a `Recipe`. 
@@ -36,37 +40,37 @@ Deliverables use the notation `#` for instance methods, and `.` for class method
   - Returns an array of all recipe instances that have been created.~~~~~~~~~~~~~
 
 #### Restaurant
-- `Restaurant#initialize(owner, name, star_rating)`
-  - A restaurant should be initialized with a `RestaurantOwner` instance, a `name` (string) and a `star_rating` (integer).
-  - The name and star_rating can be changed after the restaurant is initialized.
-  - Both name and star_rating are readable.
-- `Restaurant.all`
-  - Returns an array of all restaurant instances that have been created.
+- `Restaurant#initialize(owner, name, star_rating)`~~~~~~~~~~~~~~~
+  - A restaurant should be initialized with a `RestaurantOwner` instance, a `name` (string) and a `star_rating` (integer).~~~~~~~~~~~~~~~
+  - The name and star_rating can be changed after the restaurant is initialized.~~~~~~~~~~
+  - Both name and star_rating are readable.~~~~~~~~~
+- `Restaurant.all`~~~~~~
+  - Returns an array of all restaurant instances that have been created.~~~~~~~~
 
 #### RestaurantOwner
-- `RestaurantOwner#initialize(name, age)`
-  - A restaurant_owner should be initialized with a `name` (string) and an `age` (integer).
-  - The name and age can be changed after the restaurant_owner is initialized.
-  - Both name and age are readable.
-- `RestaurantOwner.all`
-  - Returns an array of all restaurant_owner instances that have been created.
+- `RestaurantOwner#initialize(name, age)` ~~~~~~~~~
+  - A restaurant_owner should be initialized with a `name` (string) and an `age` (integer).~~~~~~~~~
+  - The name and age can be changed after the restaurant_owner is initialized.~~~
+  - Both name and age are readable.~~~~~~~~~
+- `RestaurantOwner.all`~~~~~~~~ 
+  - Returns an array of all restaurant_owner instances that have been created.~~~~~
 
 #### MenuItem
-- `MenuItem#initialize(restaurant, recipe, price)`
-  - A menu_item should be initialized with a `Restaurant` instance, a `Recipe` instance and a `price` (float).
+- `MenuItem#initialize(restaurant, recipe, price)`~~~~~~~~
+  - A menu_item should be initialized with a `Restaurant` instance, a `Recipe` instance and a `price` (float).~~~~~~~~`
   - The price can be changed after the menu_item is initialized.
-- `MenuItem.all`
-  - Returns an array of all menu_item instances that have been created.
+- `MenuItem.all`~~~~~~~~
+  - Returns an array of all menu_item instances that have been created.~~~~~~~~
 
 
 
 ### Object Relationship Methods
 
 #### Recipe
-- `Recipe#menu_items`
+- `Recipe#menu_items`~~~~~~~~
   - returns an array of all the `MenuItem` instances for the `Recipe`.
-- `Recipe#restaurants`
-  - returns an array of all the `Restaurant` instances that have the `Recipe` on their menu.
+- `Recipe#restaurants`~~~~~~~~
+  - returns an array of all the `Restaurant` instances that have the `Recipe` on their menu. ~~~~~
 
 #### Restaurant
 - `Restaurant#menu_items`
