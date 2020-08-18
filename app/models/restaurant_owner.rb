@@ -1,7 +1,7 @@
 class RestaurantOwner
     
     attr_accessor :name, :age
-    attr_reader :name, :age
+    attr_reader :name, :age # CARYN SAYS: if you have the accessor, you should not also have reader. accessor makes both 
     @@all = []
 
     def initialize(name, age)
@@ -14,6 +14,7 @@ class RestaurantOwner
         @@all
     end
 
+    # CARYN SAYS: up through association methods are good! 
     def restaurants
         Restaurant.all.filter { |r| r.restaurant_owner == self }
     end

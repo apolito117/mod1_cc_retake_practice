@@ -22,6 +22,8 @@ pizza = MenuItem.new(flavortown, recipe1, 4.00)
 pie = MenuItem.new(flavortown, recipe2, 3.00)
 burger = MenuItem.new(burgertown, recipe3, 3.00)
 
+# CARYN SAYS: make sure you have enough instances to test easily and thoroughly! 
+
 
 # ===== WARNING! DO NOT EDIT BELOW THIS LINE ===== #
 binding.pry

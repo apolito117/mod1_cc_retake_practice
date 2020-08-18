@@ -1,4 +1,5 @@
 class MenuItem
+    # CARYN SAYS: good for all the methods you got up to! 
 
     attr_accessor :restaurant, :recipe, :price
     @@all = []

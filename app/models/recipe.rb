@@ -1,5 +1,5 @@
 class Recipe
-
+    # CARYN SAYS: good up for all the methods you got to! 
     
     attr_reader :name
     attr_accessor :description
